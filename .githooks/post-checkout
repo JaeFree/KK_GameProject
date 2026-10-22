@@ -1,0 +1,20 @@
+#!/bin/sh
+# 브랜치를 바꿀 때마다 pull 안내를 보여 줍니다.
+# $3 = 1 이면 브랜치 전환, 0 이면 파일 체크아웃
+[ "$3" = "1" ] || exit 0
+
+branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+
+echo ""
+echo "--------------------------------------------------"
+echo " 현재 브랜치: $branch"
+if [ "$branch" = "main" ] || [ "$branch" = "master" ]; then
+  echo " 작업 전에 최신 상태로 받아 오세요:  git pull"
+  echo " 그다음 개별 브랜치에서 작업하세요: git switch -c feature/작업이름"
+else
+  echo " 작업 전에 main의 최신 내용을 받아 오세요:"
+  echo "   git switch main && git pull && git switch $branch && git merge main"
+fi
+echo "--------------------------------------------------"
+echo ""
+exit 0
