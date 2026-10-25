@@ -4,7 +4,7 @@
 
 | 일차 | 과제 | 익힐 개념 |
 | --- | --- | --- |
-| 1 | 환경 세팅 ([SETUP.md](SETUP.md)) 끝내기, 첫 PR 머지 | Unity Hub, Git LFS, PR |
+| 1 | 환경 세팅 ([SETUP.md](SETUP.md)), `KK → 프로젝트 기본 설정 적용` 실행, 기본 코드 읽어 보기, 첫 PR 머지 | Unity Hub, Git LFS, PR, 폴더 구조 |
 | 2 | 바닥(Plane)과 캡슐 캐릭터 배치, WASD로 이동 | GameObject, Transform, `Update`, `Time.deltaTime` |
 | 3 | 탑다운 카메라가 캐릭터를 따라오게 하기, 마우스 방향 바라보기 | Camera, `LateUpdate`, Raycast |
 | 4 | 새 Input System으로 이동 입력 바꾸기, 2P용 두 번째 입력(방향키) 추가 | Input System, Action Map |

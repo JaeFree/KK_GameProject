@@ -37,12 +37,17 @@ Unity Hub는 이미 파일이 있는 폴더에 새 프로젝트를 바로 만들
 5. Unity Hub → Add → Add project from disk → `C:\Dev\KK_GameProject` 선택 후 엽니다.
 6. `KK_Temp` 폴더는 삭제해도 됩니다.
 
-## 4. Unity 설정 (Git 협업용)
+## 4. Unity 기본 설정 (메뉴 한 번)
 
-Edit → Project Settings → Editor:
+프로젝트가 열리면 상단 메뉴 **KK → 프로젝트 기본 설정 적용**을 누릅니다. 아래가 자동으로 처리됩니다.
 
-- **Version Control → Mode**: Visible Meta Files
-- **Asset Serialization → Mode**: Force Text
+- Asset Serialization: Force Text, Version Control: Visible Meta Files (Git 협업용)
+- Company / Product Name: KK / KK_GameProject
+- 빠진 폴더 생성
+- `Main` 씬과 개인 실험용 `Sandbox_JaeFree` 씬 생성 (바닥, 탑다운 카메라, GameManager 포함)
+- `Main` 씬을 빌드 씬 목록 맨 앞에 추가
+
+URP 템플릿이 만든 `Assets/Scenes/SampleScene`, `Assets/Readme` 같은 예제 파일은 지워도 됩니다. 끝나면 Edit → Project Settings → Editor에서 두 설정이 바뀌었는지 눈으로 한 번 확인합니다.
 
 Edit → Preferences → External Tools → External Script Editor: Visual Studio 선택
 
